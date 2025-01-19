@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* =============================================
+	Author: ken Wabibi 
+	Date: 18Jan24
+   =============================================
+*/
+html, body {
+/* Increase font size for desktop */
+	font-size: 20px;
+}
+html {
+/* Set background color for desktop */
+    background-color: rgb(21, 54, 95);
+    margin: 0 auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;	
+}
+body {
+    width: 88.2%;	
+    max-width: 900px;	
+    background-color:#c3a456; 
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;	
+    box-sizing: border-box;
+    box-shadow: 5px, 5px, 10px, 0px, rgb(240, 240, 247);
+}
+nav { 
+    padding: 5px;
+    text-align: center; 
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 15px;
+    font-size: 1em;
+}
+a {
+	color: #1c0b01;
+}
+a:visited {
+	color: #bd6128;
+}
+a:hover {
+	color: #732d02;
+}
+a:focus {
+	outline: thin dotted;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+footer {
+/* Footer styles */
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; 
+    	padding: 10px;
+    	text-align: center; 
+	margin-top: 350px;
+}
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0 15px;
+}
