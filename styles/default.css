@@ -26,9 +26,22 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
     margin: 0 auto;
     padding: 0;
-    text-align: center;	
+    text-align: left;	
     box-sizing: border-box;
     box-shadow: 5px, 5px, 10px, 0px, rgb(240, 240, 247);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;	
+}
+figure figcaption {
+    text-align: center;	
+}
+figure figcaption alt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;	
 }
 nav { 
     padding: 5px;
