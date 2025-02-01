@@ -11,24 +11,23 @@ html, body {
 }
 html {
 /* Set background color for desktop */
-    background-color: rgb(91, 17, 39);
-    margin: 0 auto;
+    background-image: url("../images/rustedmetal.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#727171; 
+    background-blend-mode: soft-light;
+    height: 100vh;
+    margin: 0;	
 }
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;	
-}
-body {
-    width: 88.2%;	
-    max-width: 900px;	
-    background-color:#c3a456; 
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+header {
+    width: 100%;	
+    max-width: 1200px;
+    background-color:#967867; 
+    border: 5px solid #732d02;
     margin: 0 auto;
-    padding: 50px;
-    text-align: left;	
     box-sizing: border-box;
-    box-shadow: 5px, 5px, 10px, 0px, rgb(240, 240, 247);
+    padding: 20px;
 }
 .center{
     display: block;
@@ -42,6 +41,45 @@ figure figcaption alt {
     display: block;
     margin-left: auto;
     margin-right: auto;	
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;	
+}
+body { 
+    width: 100%;	
+    max-width: 1290px;
+    background-color:#7e8182; 
+    border: 20px solid #732d022f;
+    background-blend-mode: soft-light;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: left;	
+}
+.container{
+    width: 100%;	
+    max-width: 1200px;
+    background-color:#b6b9ba; 
+    border: 10px solid #000000;
+    background-blend-mode: soft-light;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+figure figcaption {
+    text-align: center;	
+}
+figure figcaption alt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;	
+}
+img {
+    border: 5px solid #000000;	
 }
 nav { 
     padding: 5px;
@@ -63,13 +101,10 @@ nav li {
     font-size: 1em;
 }
 a {
-	color: #1c0b01;
-}
-a:visited {
-	color: #bd6128;
+	color: #000000;
 }
 a:hover {
-	color: #732d02;
+	color: #c00707;
 }
 a:focus {
 	outline: thin dotted;
@@ -82,10 +117,13 @@ footer {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif; 
     	padding: 20px;
     	text-align: center; 
-	margin-top: 350px;
+	margin-top: 90px;
+	background-color:#b6b9ba; 
+    	border: 2px solid #000000;
 }
 footer a {
 	font-size: 1em;
 	text-align: center; 
-	margin: 0 15px;
+	margin: 0; 
+    	padding: 0;
 }
