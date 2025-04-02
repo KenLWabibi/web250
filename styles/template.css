@@ -92,6 +92,9 @@ a:hover {
 p a:hover {
     color: #DBEFBC;
 }
+main p a {
+    color:#5F634F;
+}
 footer p a {
     text-decoration-line: underline;
     color:#5F634F;
