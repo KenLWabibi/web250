@@ -1,0 +1,116 @@
+/* Html */
+html{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #5F634F;
+} 
+
+/* Body */
+body {
+    background-color:#b6b9ba; 
+    box-sizing: border-box;
+    border: 5px solid #732d022f;
+    border-radius: 10px;
+    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
+    font-size: 1.2em;
+    padding: 10px; /* Remove padding on body, it may conflict with other elements */
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
+/* Headings */
+h1 {
+    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #5F634F;
+    border-radius: 10px;
+    box-sizing: border-box
+}
+
+h2, h4 {
+    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    margin: 0px;
+}
+
+
+/* Main */
+main {
+    flex-grow: 1; /* Ensures main content takes available space */
+    padding: 35px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border: 5px solid #5F634F;
+    border-radius: 10px;
+    padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    padding: 5px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+nav li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+/* Links */
+a {
+	color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+	color: #DBEFBC;
+}
+p a:hover {
+    color: #DBEFBC;
+}
+footer p a {
+    text-decoration-line: underline;
+    color:#5F634F;
+}
+
+/* Footer */
+footer {
+    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #5F634F;
+    border-radius: 10px;
+    box-sizing: border-box
+}
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0; 
+    padding: 0;
+}
