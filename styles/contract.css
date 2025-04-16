@@ -6,6 +6,17 @@ html{
     background-color: #20205D;
 } 
 
+/* Header */
+header {
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #20205D;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
     background-color:#d6dadb; 
@@ -23,13 +34,11 @@ body {
 
 /* Headings */
 h1 {
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     margin: 0;
     width: 100%;
-    border: 5px solid #20205D;
-    border-radius: 10px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 h2, h4 {
