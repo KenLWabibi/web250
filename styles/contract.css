@@ -62,8 +62,8 @@ main {
     padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
     text-align: left;
     margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Navigation */
