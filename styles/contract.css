@@ -1,18 +1,18 @@
 /* Html */
 html{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-    background-color: #5F634F;
+    background-color: #20205D;
 } 
 
 /* Body */
 body {
-    background-color:#b6b9ba; 
+    background-color:#d6dadb; 
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
-    border: 5px solid #732d022f;
+    border: 5px solid #20205D;
     border-radius: 10px;
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
     font-size: 1.2em;
     padding: 10px; /* Remove padding on body, it may conflict with other elements */
     margin: 0; /* Remove default body margin */
@@ -23,18 +23,16 @@ body {
 
 /* Headings */
 h1 {
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
     padding: 1px;
     text-align: center;
     margin: 0;
     width: 100%;
-    border: 5px solid #5F634F;
+    border: 5px solid #20205D;
     border-radius: 10px;
     box-sizing: border-box
 }
 
 h2, h4 {
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
     text-align: center;
 }
 
@@ -50,7 +48,7 @@ main {
     padding: 35px;
     padding-top: 5px;
     box-sizing: border-box;
-    border: 5px solid #5F634F;
+    border: 5px solid #20205D;
     border-radius: 10px;
     padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
     text-align: left;
@@ -75,8 +73,8 @@ nav ul {
 }
 nav li {
     display: inline-block;
-    padding: 5px;
-    margin: 0 10px;
+    padding: 2px;
+    margin: 0 5px;
     font-size: 1em;
 }
 
@@ -87,28 +85,26 @@ a {
     font-weight: bolder;
 }
 a:hover {
-	color: #DBEFBC;
+	color: #17BEBB;
 }
 p a:hover {
-    color: #DBEFBC;
+    color: #17BEBB;
 }
 main p a {
-    text-decoration-line: underline;
-    color:#5F634F;
+    color: #20205D;
 }
 footer p a {
     text-decoration-line: underline;
-    color:#5F634F;
+    color: #20205D;
 }
 
 /* Footer */
 footer {
-    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
     padding: 1px;
     text-align: center;
     margin: 0;
     width: 100%;
-    border: 5px solid #5F634F;
+    border: 5px solid #20205D;
     border-radius: 10px;
     box-sizing: border-box
 }
@@ -118,6 +114,7 @@ footer a {
 	margin: 0; 
     padding: 0;
 }
+
 
 /* Media Queries for Small Screens */
 @media screen and (max-width: 768px) {
