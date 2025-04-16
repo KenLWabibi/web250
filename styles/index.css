@@ -15,7 +15,7 @@ body {
     border-radius: 10px;
     font-size: 1.2em;
     padding: 10px; /* Remove padding on body, it may conflict with other elements */
-    margin: 0; /* Remove default body margin */
+    margin: 10px; /* a tiny bit of top/bottom margin overall */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure body takes at least full height */
