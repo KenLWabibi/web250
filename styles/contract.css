@@ -10,7 +10,7 @@ html{
 header {
     padding: 1px;
     text-align: center;
-    margin: 0;
+    margin-bottom: 0;
     width: 100%;
     border: 5px solid #20205D;
     border-radius: 10px;
