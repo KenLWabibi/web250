@@ -1,13 +1,13 @@
+/* Html */
 html{
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
     background-color: #20205D;
 } 
-
 /* Header */
 header {
-    padding: 1px;
+    padding: 10px 1px;
     text-align: center;
     margin: 0;
     width: 100%;
@@ -33,8 +33,8 @@ body {
 
 /* Headings */
 h1 {
-    padding: 0px;
-    margin: 5px;
+    padding: 0;
+    margin: 4px 0;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -63,6 +63,23 @@ main {
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+figure img {
+    box-sizing: border-box;
+    width: 300px;             /* Example: set width to 300px */
+    height: auto;
+    display: block;        /* Makes the image a block element (removes extra space below the image) */
+    margin: 0 auto;
+    border: 2px solid #20205D;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Navigation */
@@ -108,13 +125,13 @@ footer p a {
 
 /* Footer */
 footer {
-    padding: 1px;
+    padding: 10px 1px;
     text-align: center;
     margin: 0;
     width: 100%;
     border: 5px solid #20205D;
     border-radius: 10px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 footer a {
 	font-size: 1em;
@@ -124,7 +141,7 @@ footer a {
 }
 
 footer p {
-    margin: 5px;
+    margin: 4px 0;
 }
 
 /* Media Queries for Small Screens */
