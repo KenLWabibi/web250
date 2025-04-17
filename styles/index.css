@@ -10,7 +10,7 @@ html{
 header {
     padding: 1px;
     text-align: center;
-    margin: 0;
+    margin-bottom: 0;
     width: 100%;
     border: 5px solid #20205D;
     border-radius: 10px;
@@ -34,9 +34,9 @@ body {
 
 /* Headings */
 h1 {
-    padding: 5px;
+    padding: 0px;
+    margin: 5px;
     text-align: center;
-    margin: 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -85,15 +85,15 @@ figcaption {
 
 /* Navigation */
 nav {
-    padding: 5px;
     text-align: center;
+    margin: 5px;
 }
 nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
     margin: 0;
     flex-wrap: wrap;
 }
@@ -139,6 +139,10 @@ footer a {
 	text-align: center; 
 	margin: 0; 
     padding: 0;
+}
+
+footer p {
+    margin: 5px;
 }
 
 /* Media Queries for Small Screens */
