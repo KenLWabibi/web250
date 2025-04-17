@@ -19,6 +19,6 @@
            free to click on any links above or below, or skip ahead and learn more about 
            me by reading my <a href="introduction.php">Introduction Page</a>.</p>
     </main>
+    <?php include 'components/footer.php'; ?>
 </body>
-<?php include 'components/footer.php'; ?>
 </html>
