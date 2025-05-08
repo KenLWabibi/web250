@@ -51,7 +51,7 @@ background-color:teal;
 <h1>Sam's Used Cars</h1>
 <h3>Complete Inventory</h3>
  <?php
-include 'db.php';
+include 'dbconfig.php';
 $query = "SELECT * FROM inventory ORDER BY Make";
 /* Try to insert the new car into the database */
 if ($result = $mysqli->query($query)) {
