@@ -7,9 +7,9 @@
 
 <h1>Sam's Used Cars</h1>
 <?php 
-include 'db.php';
+include 'dbconfig.php';
 $vin = $_GET['VIN'];
-$query = "DELETE FROM INVENTORY WHERE VIN='$vin'";
+$query = "DELETE FROM inventory WHERE VIN='$vin'";
 echo "$query <BR>";
 /* Try to query the database */
 if ($result = $mysqli->query($query)) {
@@ -21,7 +21,7 @@ else
 }
 
 $mysqli->close();
-   
+include 'footer.php';   
 ?>
 
 </body>
