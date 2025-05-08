@@ -12,7 +12,7 @@
     <?php include 'components/header.php'; ?>
     <main>
         <h2>Course Contract</h2>
-        <p> I, <a href="introduction.html">Ken L. Wabibi</a>, agree to abide by the terms in my Spring 2025 WEB250-N801 Database 
+        <p> I, <a href="introduction.php">Ken L. Wabibi</a>, agree to abide by the terms in my Spring 2025 WEB250-N801 Database 
             Driven Website Course with my instructor, Professor D.I. von Briesen.</p>
        
         <p> I understand that all work that I do on my school and personal websites will be publicly available to the world. 
