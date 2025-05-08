@@ -12,6 +12,7 @@
     <?php include 'components/header.php'; ?>
     <main>
         <h2>Introduction</h2>
+        <h3>Ken L. Wabibi | Keen Whale</h3>
         <figure>
             <img src="ck_resized3.png"  alt="Photo of Ken hugging which his black lab, Chance" class="center"> 
             <figcaption><em>With my dog Chance</em></figcaption>
