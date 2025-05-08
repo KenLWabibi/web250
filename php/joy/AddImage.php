@@ -1,61 +1,103 @@
 <html>
 <head>
-<title>Sam's Used Cars - Image Upload</title>
-</head>
+    <meta charset="utf-8">
+    <title>Sam's Used Cars</title>
+    
+    <style>
+  /* The grid is used to format a table instead of a grid control on the list of Notes */
+#Grid
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:50%;
+border-collapse:collapse;
+margin-left: auto;
+margin-right: auto;
+}
+#Grid td, #Grid th 
+{
+font-size:1em;
+border:1px solid #61ADD7;
+padding:3px 7px 2px 7px;
+}
+#Grid th 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#C2D9FE;
+color: lightslategray;
+
+}
+#Grid tr.odd td 
+{
+color:#000000;
+background-color: #F2F5A9;
+}
+
+#Grid tr.even  
+{
+color:#000000;
+background-color: white;
+}
+#Grid head 
+{
+color:#000000;
+background-color:teal;
+}
+.auto-style1 {
+	text-align: center;
+}
+</style>
+ 
+</head> 
 <body background="bg.jpg">
 <h1>Sam's Used Cars</h1>
-<h3>Add Image</h3>
-<?php include 'db.php';
-$vin = $_GET['VIN'];
-$query = "SELECT * FROM INVENTORY WHERE VIN='$vin'";
+<h3>Current Inventory</h3>
+ <div class="auto-style1">
+ <?php
+include 'dbconfig.php';
+$query = "SELECT * FROM inventory";
 /* Try to query the database */
 if ($result = $mysqli->query($query)) {
    // Don't do anything if successful.
 }
 else
 {
-    echo "Sorry, a vehicle with VIN of $vin cannot be found " . mysql_error()."<br>";
+    echo "Error getting cars from the database: " . mysql_error()."<br>";
 }
+
+// Create the table headers
+echo "<table id='Grid' ><tr>";
+echo "<th style='width: 15px'>Make</th>";
+echo "<th style='width: 30px'>Model</th>";
+echo "<th style='width: 50px'>Action</th>";
+echo "</tr>\n";
+
+$class ="odd";  // Keep track of whether a row was even or odd, so we can style it later
+
 // Loop through all the rows returned by the query, creating a table row for each
 while ($result_ar = mysqli_fetch_assoc($result)) {
-    $year = $result_ar['YEAR'];
-	$make = $result_ar['Make'];
-    $model = $result_ar['Model'];
-    $trim = $result_ar['TRIM'];
-    $color = $result_ar['EXT_COLOR'];
-    $interior = $result_ar['INT_COLOR'];
-    $mileage = $result_ar['MILEAGE']; 
-    $transmission = $result_ar['TRANSMISSION']; 
-    $price = $result_ar['ASKING_PRICE'];
-}
-echo "<p>$color $year $make $model <br>VIN: $vin</p>";
-echo "<p>Asking Price: $".number_format($price,0) ."</p>";
-
-
+    echo "<tr class=\"$class\">";
+    echo "<td><a href='viewcar.php?VIN=".$result_ar['VIN']."'>" . $result_ar['Make'] . "</a></td>";
+    echo "<td>" . $result_ar['Model'] . "</td>";
+   echo "<td><a href='AddImage.php?VIN=".$result_ar['VIN']."'>Add Image</a> </td>";
+   echo "</tr>\n";
    
-?>
-
-<form action="upload_file.php" method="post" enctype="multipart/form-data">
-<label for="file">Filename:</label>
-<input type="file" name="file" id="file"><br>
-<input name="VIN" type="hidden" value= "<?php echo "$vin" ?>" />
-<input type="submit" name="submit" value="Submit">
-</form>
-<br/><br/>
-<?php
-$query = "SELECT * FROM images WHERE VIN='$vin'";
-/* Try to query the database */
-if ($result = $mysqli->query($query)) {
-   // Got some results
-   // Loop through all the rows returned by the query, creating a table row for each
-while ($result_ar = mysqli_fetch_assoc($result)) {
-    $image = $result_ar['ImageFile'];
-    echo "<img src='uploads/$image' width= '250'>  " ;
+   // If the last row was even, make the next one odd and vice-versa
+    if ($class=="odd"){
+        $class="even";
+    }
+    else
+    {
+        $class="odd";
+    }
 }
-}
+echo "</table>";
 $mysqli->close();
-include 'footer.php';
+include 'footer.php'
 ?>
-</body>
 
-</html> 
+ </body>
+ 
+</html>
