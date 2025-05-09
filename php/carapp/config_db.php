@@ -1,7 +1,7 @@
 <?php
 $serverName = 'sql209.infinityfree.com';
 $username = 'if0_38454613';
-$password = 'Candacewabibi14';
+$password = 'ThinkHarder44';
 $databaseName = 'if0_38454613_Cars';
 
 $mysqli = new mysqli($serverName, $username, $password, $databaseName); //('mySQL', 'root', 'verysecret', 'Cars' ); // if0_38454613_Cars	if0_38454613	(Your vPanel Password)	sql209.infinityfree.com
