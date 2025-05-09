@@ -1,0 +1,280 @@
+/* Reset some defaults */
+body, h2, form, table, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f8;
+    color: #2c2c3e;
+    padding: 2rem 0;
+}
+
+/* Page container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4b3f72;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav li {
+    padding: 2px;
+    margin: 0 5px;
+    font-size: 1em;
+    position: relative;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+    background-color: #5a4e9c;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444466;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #444466;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a5a77;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sections */
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(60, 60, 100, 0.1);
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #bbbce0;
+    border-radius: 4px;
+    background-color: #fafbff;
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #5548a6;
+}
+
+/* Side-by-side layout for form and table */
+.main-sections {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.form-section,
+.table-section {
+    flex: 1 1 320px;
+}
+
+/* Limit the form section width to avoid stretching */
+.form-section {
+    max-width: 340px;
+}
+
+/* Table section gets more room to breathe */
+.table-section {
+    flex-grow: 2;
+    min-width: 360px;
+}
+
+/* Table Styles */
+table.cars-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table.cars-list th, 
+table.cars-list td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table.cars-list th {
+    background-color: #e2e1f7;
+    font-weight: bold;
+    color: #2a265f;
+}
+
+.cars-list tr:nth-child(even) {
+    background-color: #f5f6fb;
+}
+
+/* Action Links & Buttons */
+.btn-edit,
+.btn-delete {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn-edit {
+    background-color: #4db6ac;
+}
+
+.btn-edit:hover {
+    background-color: #00897b;
+}
+
+.btn-delete {
+    background-color: #e63946;
+}
+
+.btn-delete:hover {
+    background-color: #d62828;
+}
+
+/* Confirmation Message */
+.confirmation {
+    color: #00796b;
+    background-color: #d0f0ec;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #8888aa;
+}
+
+/* Links */
+a {
+	color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+	color: #17BEBB;
+}
+p a:hover {
+    color: #17BEBB;
+}
+main p a {
+    color: #20205D;
+}
+footer p a {
+    text-decoration-line: underline;
+    color: #20205D;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        gap: 0.5rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    .btn-edit, .btn-delete {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-section,
+    .table-section {
+        max-width: 100%;
+    }
+}
