@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <footer>
     <nav>
         <ul>
