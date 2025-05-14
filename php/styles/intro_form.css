@@ -1,0 +1,265 @@
+/* General Styles */
+/* Html */
+html{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #20205D;
+} 
+
+/* Header */
+header {
+    padding: 10px 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #20205D;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color:#d6dadb; 
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    border: 5px solid #20205D;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px; /* Remove padding on body, it may conflict with other elements */
+    margin: 10px; /* a tiny bit of top/bottom margin overall */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
+/* Headings */
+h1 {
+    padding: 0;
+    margin: 4px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 0px;
+}
+
+
+/* Main */
+main {
+    flex-grow: 1; /* Ensures main content takes available space */
+    padding: 35px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border: 5px solid #20205D;
+    border-radius: 10px;
+    padding-bottom: 20px; /* Reduced padding to avoid pushing footer off screen */
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+figure img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #20205D;
+    border-radius: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+figcaption {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    /* Removed: display: inline-block; */
+    padding: 2px;
+    margin: 0 5px;
+    font-size: 1em;
+    position: relative; /* Enables absolute dropdown positioning */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    /* This remains unchanged; for clarity */
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Links */
+a {
+	color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+a:hover {
+	color: #17BEBB;
+}
+p a:hover {
+    color: #17BEBB;
+}
+main p a {
+    color: #20205D;
+}
+footer p a {
+    text-decoration-line: underline;
+    color: #20205D;
+}
+
+/* Footer */
+footer {
+    padding: 10px 1px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #20205D;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+footer a {
+	font-size: 1em;
+	text-align: center; 
+	margin: 0; 
+    padding: 0;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list {
+    margin-left: 20px; /* Adjust the indent as needed */
+}
+
+
+li {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#courses-container input {
+    margin-bottom: 10px;
+}
+
+#add-course-btn {
+    margin-top: 10px;
+    background-color: #008CBA;
+}
+
+#add-course-btn:hover {
+    background-color: #005f6a;
+}
+
+#reset-btn {
+    margin-top: 10px;
+    background-color: #f44336;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+}
